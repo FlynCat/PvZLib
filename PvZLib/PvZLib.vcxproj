@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{69140f3c-28e6-42be-b02a-f5e0e637a6ff}</ProjectGuid>
+    <RootNamespace>PvZLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="event.hpp" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="model\anim_info.hpp" />
+    <ClInclude Include="model\attachment.hpp" />
+    <ClInclude Include="model\award_screen.hpp" />
+    <ClInclude Include="model\beta_support.hpp" />
+    <ClInclude Include="model\board.hpp" />
+    <ClInclude Include="model\buffer.hpp" />
+    <ClInclude Include="model\button_listener.hpp" />
+    <ClInclude Include="model\button_widget.hpp" />
+    <ClInclude Include="model\challenge.hpp" />
+    <ClInclude Include="model\challenge_screen.hpp" />
+    <ClInclude Include="model\chosen_seed.hpp" />
+    <ClInclude Include="model\coin.hpp" />
+    <ClInclude Include="model\color.hpp" />
+    <ClInclude Include="model\credit_screen.hpp" />
+    <ClInclude Include="model\crit_sect.hpp" />
+    <ClInclude Include="model\cursor_object.hpp" />
+    <ClInclude Include="model\cursor_preview.hpp" />
+    <ClInclude Include="model\cut_scene.hpp" />
+    <ClInclude Include="model\d3d_interface.hpp" />
+    <ClInclude Include="model\d3d_tester.hpp" />
+    <ClInclude Include="model\data_array.hpp" />
+    <ClInclude Include="model\dd_image.hpp" />
+    <ClInclude Include="model\dd_interface.hpp" />
+    <ClInclude Include="model\dialog.hpp" />
+    <ClInclude Include="model\dialog_button.hpp" />
+    <ClInclude Include="model\effect_system.hpp" />
+    <ClInclude Include="model\enum.hpp" />
+    <ClInclude Include="model\flags_mod.hpp" />
+    <ClInclude Include="model\float_parameter_track.hpp" />
+    <ClInclude Include="model\foley_instance.hpp" />
+    <ClInclude Include="model\foley_type_data.hpp" />
+    <ClInclude Include="model\font.hpp" />
+    <ClInclude Include="model\game_button.hpp" />
+    <ClInclude Include="model\game_object.hpp" />
+    <ClInclude Include="model\game_selector.hpp" />
+    <ClInclude Include="model\graphics.hpp" />
+    <ClInclude Include="model\grid_item.hpp" />
+    <ClInclude Include="model\hyperlink_widget.hpp" />
+    <ClInclude Include="model\image.hpp" />
+    <ClInclude Include="model\incompatible_stdlib.hpp" />
+    <ClInclude Include="model\insets.hpp" />
+    <ClInclude Include="model\internet_manager.hpp" />
+    <ClInclude Include="model\lawn_app.hpp" />
+    <ClInclude Include="model\lawn_mower.hpp" />
+    <ClInclude Include="model\lawn_stone_button.hpp" />
+    <ClInclude Include="model\level_stats.hpp" />
+    <ClInclude Include="model\magnet_item.hpp" />
+    <ClInclude Include="model\memory_image.hpp" />
+    <ClInclude Include="model\message_widget.hpp" />
+    <ClInclude Include="model\motion_trail_frame.hpp" />
+    <ClInclude Include="model\music.hpp" />
+    <ClInclude Include="model\new_lawn_button.hpp" />
+    <ClInclude Include="model\particle_field.hpp" />
+    <ClInclude Include="model\perf_timer.hpp" />
+    <ClInclude Include="model\plant.hpp" />
+    <ClInclude Include="model\player_info.hpp" />
+    <ClInclude Include="model\pool_effect.hpp" />
+    <ClInclude Include="model\pop_drm_comm.hpp" />
+    <ClInclude Include="model\potted_plant.hpp" />
+    <ClInclude Include="model\pre_modal_info.hpp" />
+    <ClInclude Include="model\profile_mgr.hpp" />
+    <ClInclude Include="model\projectile.hpp" />
+    <ClInclude Include="model\ratio.hpp" />
+    <ClInclude Include="model\reanimation.hpp" />
+    <ClInclude Include="model\resource_manager.hpp" />
+    <ClInclude Include="model\seed_bank.hpp" />
+    <ClInclude Include="model\seed_chooser_screen.hpp" />
+    <ClInclude Include="model\seed_packet.hpp" />
+    <ClInclude Include="model\sexy_app.hpp" />
+    <ClInclude Include="model\sexy_app_base.hpp" />
+    <ClInclude Include="model\sexy_matrix3.hpp" />
+    <ClInclude Include="model\sexy_transform_2d.hpp" />
+    <ClInclude Include="model\sexy_vector2.hpp" />
+    <ClInclude Include="model\shared_image.hpp" />
+    <ClInclude Include="model\sound_instance.hpp" />
+    <ClInclude Include="model\sound_manager.hpp" />
+    <ClInclude Include="model\string_less_no_case.hpp" />
+    <ClInclude Include="model\title_screen.hpp" />
+    <ClInclude Include="model\tod_allocator.hpp" />
+    <ClInclude Include="model\tod_foley.hpp" />
+    <ClInclude Include="model\tod_list.hpp" />
+    <ClInclude Include="model\tod_particle.hpp" />
+    <ClInclude Include="model\tod_smooth_array.hpp" />
+    <ClInclude Include="model\tool_tip_widget.hpp" />
+    <ClInclude Include="model\trail.hpp" />
+    <ClInclude Include="model\typing_check.hpp" />
+    <ClInclude Include="model\widget.hpp" />
+    <ClInclude Include="model\widget_manager.hpp" />
+    <ClInclude Include="model\widget_safe_delete_info.hpp" />
+    <ClInclude Include="model\win_inet_http_transfer.hpp" />
+    <ClInclude Include="model\xml_parser.hpp" />
+    <ClInclude Include="model\zen_garden.hpp" />
+    <ClInclude Include="model\zombie.hpp" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="pvz.hpp" />
+    <ClInclude Include="pvz_reference.hpp" />
+    <ClInclude Include="pvz_reference\1_0_0_1051_en.h" />
+    <ClInclude Include="pvz_reference\1_2_0_1096_en.h" />
+    <ClInclude Include="trampoline.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="event.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sandbox.cpp" />
+    <ClCompile Include="trampoline.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
