@@ -2,8 +2,8 @@
 
 namespace pvz {
     struct GameObject {
-        LawnApp *mApp;
-        Board *mBoard;
+        LawnApp* mApp;
+        Board* mBoard;
         int32_t mX;
         int32_t mY;
         int32_t mWidth;

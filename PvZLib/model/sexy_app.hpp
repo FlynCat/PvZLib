@@ -6,8 +6,8 @@
 
 namespace pvz {
     struct SexyApp : SexyAppBase {
-        InternetManager *mInternetManager;
-        BetaSupport *mBetaSupport;
+        InternetManager* mInternetManager;
+        BetaSupport* mBetaSupport;
         IncompatibleBasicString mBetaSupportSiteOverride;
         IncompatibleBasicString mBetaSupportProdNameOverride;
         IncompatibleBasicString mReferId;

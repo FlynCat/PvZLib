@@ -2,8 +2,8 @@
 
 namespace pvz {
     struct CutScene {
-        LawnApp *mApp;
-        Board *mBoard;
+        LawnApp* mApp;
+        Board* mBoard;
         int32_t mCutsceneTime;
         int32_t mSodTime;
         int32_t mGraveStoneTime;

@@ -2,8 +2,8 @@
 
 namespace pvz {
     struct ZenGarden {
-        LawnApp *mApp;
-        Board *mBoard;
+        LawnApp* mApp;
+        Board* mBoard;
         GardenType mGardenType;
     };
 } // namespace pvz

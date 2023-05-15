@@ -4,7 +4,7 @@
 
 namespace pvz {
     struct TitleScreen : EMRPLGBLT {
-        HyperlinkWidget *mStartButton;
+        HyperlinkWidget* mStartButton;
         float mCurBarWidth;
         float mTotalBarWidth;
         float mBarVel;
@@ -17,6 +17,6 @@ namespace pvz {
         bool mDrawnYet;
         bool mNeedToInit;
         float mPrevLoadingPercent;
-        LawnApp *mApp;
+        LawnApp* mApp;
     };
 } // namespace pvz

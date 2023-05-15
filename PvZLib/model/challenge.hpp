@@ -6,8 +6,8 @@ namespace pvz {
     struct LawnApp;
     struct Board;
     struct Challenge {
-        LawnApp *mApp;
-        Board *mBoard;
+        LawnApp* mApp;
+        Board* mBoard;
         bool mBeghouledMouseCapture;
         int32_t mBeghouledMouseDownX;
         int32_t mBeghouledMouseDownY;

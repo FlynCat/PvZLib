@@ -8,8 +8,8 @@
 namespace pvz {
     struct LawnApp;
     struct GameButton {
-        LawnApp *mApp;
-        Widget *mParentWidget;
+        LawnApp* mApp;
+        Widget* mParentWidget;
         int32_t mX;
         int32_t mY;
         int32_t mWidth;
@@ -21,12 +21,12 @@ namespace pvz {
         int32_t mId;
         char mLabel[28];
         int32_t mLabelJustify;
-        Font *mFont;
-        Image *mButtonImage;
-        Image *mOverImage;
-        Image *mDownImage;
-        Image *mDisabledImage;
-        Image *mOverOverlayImage;
+        Font* mFont;
+        Image* mButtonImage;
+        Image* mOverImage;
+        Image* mDownImage;
+        Image* mDisabledImage;
+        Image* mOverOverlayImage;
         TRect<int32_t> mNormalRect;
         TRect<int32_t> mOverRect;
         TRect<int32_t> mDownRect;

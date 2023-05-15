@@ -2,9 +2,9 @@
 
 namespace pvz {
     struct PreModalInfo {
-        Widget *mBaseModalWidget;
-        Widget *mPrevBaseModalWidget;
-        Widget *mPrevFocusWidget;
+        Widget* mBaseModalWidget;
+        Widget* mPrevBaseModalWidget;
+        Widget* mPrevFocusWidget;
         FlagsMod mPrevBelowModalFlagsMod;
     };
 } // namespace pvz

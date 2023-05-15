@@ -4,8 +4,8 @@
 
 namespace pvz {
     struct GridItem {
-        LawnApp *mApp;
-        Board *mBoard;
+        LawnApp* mApp;
+        Board* mBoard;
         GridItemType mGridItemType;
         GridItemState mGridItemState;
         int32_t mGridX;

@@ -10,10 +10,10 @@ namespace pvz {
         IncompatibleMap mImageMap;
         IncompatibleMap mSoundMap;
         IncompatibleMap mFontMap;
-        XMLParser *mXMLParser;
+        XMLParser* mXMLParser;
         IncompatibleBasicString mError;
         bool mHasFailed;
-        SexyAppBase *mApp;
+        SexyAppBase* mApp;
         IncompatibleBasicString mCurResGroup;
         IncompatibleBasicString mDefaultPath;
         IncompatibleBasicString mDefaultIdPrefix;
@@ -21,7 +21,7 @@ namespace pvz {
         bool mAllowAlreadyDefinedResources;
         bool mHadAlreadyDefinedError;
         IncompatibleMap mResGroupMap;
-        IncompatibleList *mCurResGroupList;
+        IncompatibleList* mCurResGroupList;
         UNDECIPHERABLE mCurResGroupListItr[8];
     };
 } // namespace pvz

@@ -3,7 +3,7 @@
 #include "magnet_item.hpp"
 
 namespace pvz {
-    struct Plant: GameObject {
+    struct Plant : GameObject {
         SeedType mSeedType;
         int32_t mPlantCol;
         int32_t mAnGameObject;

@@ -3,8 +3,8 @@
 namespace pvz {
     struct DDInterface;
     struct DDImage : MemoryImage {
-        DDInterface *mDDInterface;
-        IDirectDrawSurface *mSurface;
+        DDInterface* mDDInterface;
+        IDirectDrawSurface* mSurface;
         bool mSurfaceSet;
         bool mNoLock;
         bool mVideoMemory;

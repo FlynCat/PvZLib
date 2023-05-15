@@ -5,11 +5,11 @@
 namespace pvz {
     struct ChallengeScreen {
         UNKNOWN_BYTES(140);
-        NewLawnButton *mBackButton;
+        NewLawnButton* mBackButton;
         char mPageButton[16];
         char mChallengeButton[280];
-        LawnApp *mApp;
-        ToolTipWidget *mToolTip;
+        LawnApp* mApp;
+        ToolTipWidget* mToolTip;
         ChallengePage mPageIndex;
         bool mCheatEnableChallenges;
         UnlockingState mUnlockState;

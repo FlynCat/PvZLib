@@ -7,9 +7,9 @@
 
 namespace pvz {
     struct EffectSystem {
-        TodParticleHolder *mParticleHolder;
-        TrailHolder *mTrailHolder;
-        ReanimationHolder *mReanimationHolder;
-        AttachmentHolder *mAttachmentHolder;
+        TodParticleHolder* mParticleHolder;
+        TrailHolder* mTrailHolder;
+        ReanimationHolder* mReanimationHolder;
+        AttachmentHolder* mAttachmentHolder;
     };
 } // namespace pvz

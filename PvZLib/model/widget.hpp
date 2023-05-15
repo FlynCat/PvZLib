@@ -9,8 +9,8 @@ namespace pvz {
     struct WidgetContainer {
         UNKNOWN_BYTES(4);
         IncompatibleList mWidgets;
-        WidgetManager *mWidgetManager;
-        WidgetContainer *mParent;
+        WidgetManager* mWidgetManager;
+        WidgetContainer* mParent;
         bool mUpdateIteratorModified;
         UNDECIPHERABLE mUpdateIterator[8];
         uint32_t mLastWMUpdateCount;
@@ -39,7 +39,7 @@ namespace pvz {
         Insets mMouseInsets;
         bool mDoFinger;
         bool mWantsFocus;
-        Widget *mTabPrev;
-        Widget *mTabNext;
+        Widget* mTabPrev;
+        Widget* mTabNext;
     };
 } // namespace pvz

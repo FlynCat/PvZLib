@@ -6,8 +6,8 @@ namespace pvz {
     };
 
     struct Music {
-        LawnApp *mApp;
-        MusicInterface *mMusicInterface;
+        LawnApp* mApp;
+        MusicInterface* mMusicInterface;
         MusicTune mCurMusicTune;
         MusicFile mCurMusicFileMain;
         MusicFile mCurMusicFileDrums;

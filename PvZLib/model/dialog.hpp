@@ -7,17 +7,17 @@ namespace pvz {
 
     struct Dialog {
         UNKNOWN_BYTES(140);
-        DialogListener *mDialogListener;
-        Image *mComponentImage;
-        DialogButton *mYesButton;
-        DialogButton *mNoButton;
+        DialogListener* mDialogListener;
+        Image* mComponentImage;
+        DialogButton* mYesButton;
+        DialogButton* mNoButton;
         int32_t mNumButtons;
         IncompatibleBasicString mDialogHeader;
         IncompatibleBasicString mDialogFooter;
         IncompatibleBasicString mDialogLines;
         int32_t mButtonMode;
-        Font *mHeaderFont;
-        Font *mLinesFont;
+        Font* mHeaderFont;
+        Font* mLinesFont;
         int32_t mTextAlign;
         int32_t mLineSpacingOffset;
         int32_t mButtonHeight;

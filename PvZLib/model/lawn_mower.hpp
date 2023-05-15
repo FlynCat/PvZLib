@@ -4,8 +4,8 @@
 
 namespace pvz {
     struct LawnMower {
-        LawnApp *mApp;
-        Board *mBoard;
+        LawnApp* mApp;
+        Board* mBoard;
         float mPosX;
         float mPosY;
         int32_t mRenderOrder;

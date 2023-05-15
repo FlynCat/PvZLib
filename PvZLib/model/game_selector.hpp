@@ -4,19 +4,19 @@
 
 namespace pvz {
     struct GameSelector : EMRPLGBLT {
-        LawnApp *mApp;
-        DialogButton *mAdventureButton;
-        DialogButton *mMinigameButton;
-        DialogButton *mPuzzleButton;
-        DialogButton *mOptionsButton;
-        DialogButton *mQuitButton;
-        DialogButton *mHelpButton;
-        DialogButton *mStoreButton;
-        DialogButton *mAlmanacButton;
-        DialogButton *mZenGardenButton;
-        DialogButton *mSurvivalButton;
-        DialogButton *mChangeUserButton;
-        Widget *mOverlayWidget;
+        LawnApp* mApp;
+        DialogButton* mAdventureButton;
+        DialogButton* mMinigameButton;
+        DialogButton* mPuzzleButton;
+        DialogButton* mOptionsButton;
+        DialogButton* mQuitButton;
+        DialogButton* mHelpButton;
+        DialogButton* mStoreButton;
+        DialogButton* mAlmanacButton;
+        DialogButton* mZenGardenButton;
+        DialogButton* mSurvivalButton;
+        DialogButton* mChangeUserButton;
+        Widget* mOverlayWidget;
         bool mStartingGame;
         int32_t mStartingGameCounter;
         bool mMinigamesLocked;
@@ -34,6 +34,6 @@ namespace pvz {
         SelectorAnimState mSelectorState;
         int32_t mLevel;
         bool mLoading;
-        ToolTipWidget *mToolTip;
+        ToolTipWidget* mToolTip;
     };
 } // namespace pvz

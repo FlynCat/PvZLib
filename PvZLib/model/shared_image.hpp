@@ -2,7 +2,7 @@
 
 namespace pvz {
     struct SharedImage {
-        DDImage *mImage;
+        DDImage* mImage;
         int32_t mRefCount;
     };
 } // namespace pvz

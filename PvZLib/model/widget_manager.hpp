@@ -6,20 +6,20 @@
 namespace pvz {
     struct WidgetManager {
         UNKNOWN_BYTES(84);
-        Widget *mDefaultTab;
-        Graphics *mCurG;
-        SexyAppBase *mApp;
-        MemoryImage *mImage;
-        MemoryImage *mTransientImage;
+        Widget* mDefaultTab;
+        Graphics* mCurG;
+        SexyAppBase* mApp;
+        MemoryImage* mImage;
+        MemoryImage* mTransientImage;
         bool mLastHadTransients;
-        Widget *mPopupCommandWidget;
+        Widget* mPopupCommandWidget;
         IncompatibleVector mDeferredOverlayWidgets;
         int32_t mMinDeferredOverlayPriority;
         bool mHasFocus;
-        Widget *mFocusWidget;
-        Widget *mLastDownWidget;
-        Widget *mOverWidget;
-        Widget *mBaseModalWidget;
+        Widget* mFocusWidget;
+        Widget* mLastDownWidget;
+        Widget* mOverWidget;
+        Widget* mBaseModalWidget;
         FlagsMod mLostFocusFlagsMod;
         FlagsMod mBelowModalFlagsMod;
         FlagsMod mDefaultBelowModalFlagsMod;

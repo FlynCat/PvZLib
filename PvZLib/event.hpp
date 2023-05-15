@@ -6,7 +6,7 @@
 namespace pvz {
     struct Event;
 
-    typedef void (*EventHandler)(Event *);
+    typedef void (*EventHandler)(Event*);
 
     enum class EventType {
         // clang-format off

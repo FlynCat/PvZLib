@@ -4,7 +4,7 @@
 
 namespace pvz {
     struct FoleyInstance {
-        SoundInstance *mInstance;
+        SoundInstance* mInstance;
         int32_t mRefCount;
         bool mPaused;
         int32_t mStartTime;

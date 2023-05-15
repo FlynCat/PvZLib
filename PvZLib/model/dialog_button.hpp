@@ -4,7 +4,7 @@
 
 namespace pvz {
     struct DialogButton : ButtonWidget {
-        Image *mComponentImage;
+        Image* mComponentImage;
         int32_t mTranslateX;
         int32_t mTranslateY;
         int32_t mTextOffsetX;

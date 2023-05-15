@@ -3,6 +3,6 @@
 namespace pvz {
     struct WidgetSafeDeleteInfo {
         int32_t mUpdateAppDepth;
-        Widget *mWidget;
+        Widget* mWidget;
     };
 } // namespace pvz

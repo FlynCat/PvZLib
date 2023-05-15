@@ -8,17 +8,17 @@
 namespace pvz {
     struct DDInterface {
         UNKNOWN_BYTES(44);
-        SexyAppBase *mApp;
-        D3DInterface *mD3DInterface;
-        D3DTester *mD3DTester;
+        SexyAppBase* mApp;
+        D3DInterface* mD3DInterface;
+        D3DTester* mD3DTester;
         bool mIs3D;
         CritSect mCritSect;
         bool mInRedraw;
-        IDirectDraw *mDD;
-        IDirectDraw7 *mDD7;
-        IDirectDrawSurface *mPrimarySurface;
-        IDirectDrawSurface *mSecondarySurface;
-        IDirectDrawSurface *mDrawSurface;
+        IDirectDraw* mDD;
+        IDirectDraw7* mDD7;
+        IDirectDrawSurface* mPrimarySurface;
+        IDirectDrawSurface* mSecondarySurface;
+        IDirectDrawSurface* mDrawSurface;
         unsigned char mWindowScaleBuffers[16];
         int32_t mWidth;
         int32_t mHeight;
@@ -35,17 +35,17 @@ namespace pvz {
         uint32_t mRefreshRate;
         uint32_t mMillisecondsPerFrame;
         int32_t mScanLineFailCount;
-        int *mRedAddTable;
-        int *mGreenAddTable;
-        int *mBlueAddTable;
+        int* mRedAddTable;
+        int* mGreenAddTable;
+        int* mBlueAddTable;
         uint32_t mRedConvTable[256];
         uint32_t mGreenConvTable[256];
         uint32_t mBlueConvTable[256];
         bool mInitialized;
-        HWND__ *mHWnd;
+        HWND__* mHWnd;
         bool mIsWindowed;
-        DDImage *mScreenImage;
-        DDImage *mSecondarySurfaceImage;
+        DDImage* mScreenImage;
+        DDImage* mSecondarySurfaceImage;
         IncompatibleSet mDDImageSet;
         bool mVideoOnlyDraw;
         uint32_t mInitCount;
@@ -55,12 +55,12 @@ namespace pvz {
         int32_t mNextCursorY;
         int32_t mCursorX;
         int32_t mCursorY;
-        Image *mCursorImage;
+        Image* mCursorImage;
         bool mHasOldCursorArea;
-        IDirectDrawSurface *mOldCursorArea;
-        IDirectDrawSurface *mNewCursorArea;
-        DDImage *mOldCursorAreaImage;
-        DDImage *mNewCursorAreaImage;
+        IDirectDrawSurface* mOldCursorArea;
+        IDirectDrawSurface* mNewCursorArea;
+        DDImage* mOldCursorAreaImage;
+        DDImage* mNewCursorAreaImage;
         IncompatibleBasicString mErrorString;
     };
 } // namespace pvz

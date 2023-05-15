@@ -6,7 +6,7 @@ namespace pvz {
     };
 
     struct TrailDefinition {
-        Image *mImage;
+        Image* mImage;
         int32_t mMaxPoints;
         float mMinPointDistance;
         int32_t mTrailFlags;
@@ -26,8 +26,8 @@ namespace pvz {
         int32_t mRenderOrder;
         int32_t mTrailAge;
         int32_t mTrailDuration;
-        TrailDefinition *mDefinition;
-        TrailHolder *mTrailHolder;
+        TrailDefinition* mDefinition;
+        TrailHolder* mTrailHolder;
         float mTrailInterp[4];
         SexyVector2 mTrailCenter;
         bool mIsAttachment;

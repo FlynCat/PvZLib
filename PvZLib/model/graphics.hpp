@@ -10,7 +10,7 @@ namespace pvz {
     };
 
     struct GraphicsState {
-        Image *mDestImage;
+        Image* mDestImage;
         float mTransX;
         float mTransY;
         float mScaleX;
@@ -19,7 +19,7 @@ namespace pvz {
         float mScaleOrigY;
         TRect<int> mClipRect;
         Color mColor;
-        Font *mFont;
+        Font* mFont;
         int32_t mDrawMode;
         bool mColorizeImages;
         bool mFastStretch;
@@ -30,7 +30,7 @@ namespace pvz {
 
     struct Graphics {
         UNKNOWN_BYTES(80);
-        Edge *mPFActiveEdgeList;
+        Edge* mPFActiveEdgeList;
         int32_t mPFNumActiveEdges;
         int32_t mPFNumVertices;
         IncompatibleList mStateStack;

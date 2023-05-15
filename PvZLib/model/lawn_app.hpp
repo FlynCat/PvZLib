@@ -23,14 +23,14 @@
 
 namespace pvz {
     struct LawnApp : SexyApp {
-        Board *mBoard;
-        TitleScreen *mTitleScreen;
-        GameSelector *mGameSelector;
-        SeedChooserScreen *mSeedChooserScreen;
-        AwardScreen *mAwardScreen;
-        CreditScreen *mCreditScreen;
-        ChallengeScreen *mChallengeScreen;
-        TodFoley *mSoundSystem;
+        Board* mBoard;
+        TitleScreen* mTitleScreen;
+        GameSelector* mGameSelector;
+        SeedChooserScreen* mSeedChooserScreen;
+        AwardScreen* mAwardScreen;
+        CreditScreen* mCreditScreen;
+        ChallengeScreen* mChallengeScreen;
+        TodFoley* mSoundSystem;
         IncompatibleList mControlButtonList;
         IncompatibleList mCreatedImageList;
         IncompatibleBasicString mReferId;
@@ -47,16 +47,16 @@ namespace pvz {
         int32_t mMaxPlays;
         int32_t mMaxTime;
         bool mEasyPlantingCheat;
-        PoolEffect *mPoolEffect;
-        ZenGarden *mZenGarden;
-        EffectSystem *mEffectSystem;
-        ReanimatorCache *mReanimatorCache;
-        ProfileMgr *mProfileMgr;
-        PlayerInfo *mPlayerInfo;
-        LevelStats *mLastLevelStats;
+        PoolEffect* mPoolEffect;
+        ZenGarden* mZenGarden;
+        EffectSystem* mEffectSystem;
+        ReanimatorCache* mReanimatorCache;
+        ProfileMgr* mProfileMgr;
+        PlayerInfo* mPlayerInfo;
+        LevelStats* mLastLevelStats;
         bool mCloseRequest;
         int32_t mAppCounter;
-        Music *mMusic;
+        Music* mMusic;
         int32_t mCrazyDaveReanimID;
         CrazyDaveState mCrazyDaveState;
         int32_t mCrazyDaveBlinkCounter;
@@ -64,22 +64,22 @@ namespace pvz {
         int32_t mCrazyDaveMessageIndex;
         IncompatibleBasicString mCrazyDaveMessageText;
         int32_t mAppRandSeed;
-        HICON__ *mBigArrowCursor;
-        PopDRMComm *mDRM;
+        HICON__* mBigArrowCursor;
+        PopDRMComm* mDRM;
         int32_t mSessionID;
         int32_t mPlayTimeActiveSession;
         int32_t mPlayTimeInactiveSession;
         BoardResult mBoardResult;
         bool mKilledYetiAndRestarted;
-        TypingCheck *mKonamiCheck;
-        TypingCheck *mMustacheCheck;
-        TypingCheck *mMoustacheCheck;
-        TypingCheck *mSuperMowerCheck;
-        TypingCheck *mSuperMowerCheck2;
-        TypingCheck *mFutureCheck;
-        TypingCheck *mPinataCheck;
-        TypingCheck *mDaisyCheck;
-        TypingCheck *mSukhbirCheck;
+        TypingCheck* mKonamiCheck;
+        TypingCheck* mMustacheCheck;
+        TypingCheck* mMoustacheCheck;
+        TypingCheck* mSuperMowerCheck;
+        TypingCheck* mSuperMowerCheck2;
+        TypingCheck* mFutureCheck;
+        TypingCheck* mPinataCheck;
+        TypingCheck* mDaisyCheck;
+        TypingCheck* mSukhbirCheck;
         bool mMustacheMode;
         bool mSuperMowerMode;
         bool mFutureMode;
@@ -88,6 +88,6 @@ namespace pvz {
         bool mSukhbirMode;
         UNKNOWN_BYTES(6);
 
-        static LawnApp &GetInstance() { return **(LawnApp **) 0x6A9EC0; }
+        static LawnApp& GetInstance() { return **(LawnApp**)0x6A9EC0; }
     };
 } // namespace pvz

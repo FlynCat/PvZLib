@@ -12,6 +12,6 @@ namespace pvz {
         int32_t mHeight;
         int32_t mNumRows;
         int32_t mNumCols;
-        AnimInfo *mAnimInfo;
+        AnimInfo* mAnimInfo;
     };
 } // namespace pvz

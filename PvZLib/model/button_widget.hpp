@@ -6,11 +6,11 @@ namespace pvz {
         int32_t mId;
         IncompatibleBasicString mLabel;
         int32_t mLabelJustify;
-        Font *mFont;
-        Image *mButtonImage;
-        Image *mOverImage;
-        Image *mDownImage;
-        Image *mDisabledImage;
+        Font* mFont;
+        Image* mButtonImage;
+        Image* mOverImage;
+        Image* mDownImage;
+        Image* mDisabledImage;
         TRect<int32_t> mNormalRect;
         TRect<int32_t> mOverRect;
         TRect<int32_t> mDownRect;
@@ -18,7 +18,7 @@ namespace pvz {
         bool mInverted;
         bool mBtnNoDraw;
         bool mFrameNoDraw;
-        ButtonListener *mButtonListener;
+        ButtonListener* mButtonListener;
         double mOverAlpha;
         double mOverAlphaSpeed;
         double mOverAlphaFadeInSpeed;

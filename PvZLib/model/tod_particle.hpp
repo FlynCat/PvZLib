@@ -6,15 +6,15 @@
 
 namespace pvz {
     struct TodEmitterDefinition {
-        Image *mImage;
+        Image* mImage;
         int32_t mImageCol;
         int32_t mImageRow;
         int32_t mImageFrames;
         int32_t mAnimated;
         int32_t mParticleFlags;
         EmitterType mEmitterType;
-        char *mName;
-        char *mOnDuration;
+        char* mName;
+        char* mOnDuration;
         FloatParameterTrack mSystemDuration;
         FloatParameterTrack mCrossFadeDuration;
         FloatParameterTrack mSpawnRate;
@@ -37,9 +37,9 @@ namespace pvz {
         FloatParameterTrack mSystemBlue;
         FloatParameterTrack mSystemAlpha;
         FloatParameterTrack mSystemBrightness;
-        ParticleField *mParticleFields;
+        ParticleField* mParticleFields;
         int32_t mParticleFieldCount;
-        ParticleField *mSystemFields;
+        ParticleField* mSystemFields;
         int32_t mSystemFieldCount;
         FloatParameterTrack mParticleRed;
         FloatParameterTrack mParticleGreen;
@@ -60,7 +60,7 @@ namespace pvz {
     };
 
     struct TodParticleDefinition {
-        TodEmitterDefinition *mEmitterDefs;
+        TodEmitterDefinition* mEmitterDefs;
         int32_t mEmitterDefCount;
     };
 
@@ -68,8 +68,8 @@ namespace pvz {
 
     struct TodParticleSystem {
         ParticleEffect mEffectType;
-        TodParticleDefinition *mParticleDef;
-        TodParticleHolder *mParticleHolder;
+        TodParticleDefinition* mParticleDef;
+        TodParticleHolder* mParticleHolder;
         TodList<int32_t> mEmitterList;
         bool mDead;
         bool mIsAttachment;
@@ -78,8 +78,8 @@ namespace pvz {
     };
 
     struct TodParticleEmitter {
-        TodEmitterDefinition *mEmitterDef;
-        TodParticleSystem *mParticleSystem;
+        TodEmitterDefinition* mEmitterDef;
+        TodParticleSystem* mParticleSystem;
         TodList<int32_t> mParticleList;
         float mSpawnAccum;
         SexyVector2 mSystemCenter;
@@ -92,7 +92,7 @@ namespace pvz {
         Color mColorOverride;
         bool mExtraAdditiveDrawOverride;
         float mScaleOverride;
-        Image *mImageOverride;
+        Image* mImageOverride;
         int32_t mCrossFadeEmitterID;
         int32_t mEmitterCrossFadeCountDown;
         int32_t mFrameOverride;
@@ -101,7 +101,7 @@ namespace pvz {
     };
 
     struct TodParticle {
-        TodParticleEmitter *mParticleEmitter;
+        TodParticleEmitter* mParticleEmitter;
         int32_t mParticleDuration;
         int32_t mParticleAge;
         float mParticleTimeValue;

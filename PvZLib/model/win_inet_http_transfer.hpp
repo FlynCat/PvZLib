@@ -18,7 +18,7 @@ namespace pvz {
         IncompatibleBasicString mUserAgent;
         IncompatibleBasicString mPostContentType;
         IncompatibleBasicString mPostData;
-        _iobuf *mFP;
+        _iobuf* mFP;
         bool mUsingFile;
         IncompatibleBasicString mContent;
         int32_t mContentLength;

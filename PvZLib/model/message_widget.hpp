@@ -4,7 +4,7 @@
 
 namespace pvz {
     struct MessageWidget {
-        LawnApp *mApp;
+        LawnApp* mApp;
         char mLabel[128];
         int32_t mDisplayTime;
         int32_t mDuration;

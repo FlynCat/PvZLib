@@ -9,12 +9,12 @@ namespace pvz {
 
     template<typename T>
     struct DataArray {
-        DataArrayItem<T> *mBlock;
+        DataArrayItem<T>* mBlock;
         uint32_t mMaxUsedCount;
         uint32_t mMaxSize;
         uint32_t mFreeListHead;
         uint32_t mSize;
         uint32_t mNextKey;
-        char *mName;
+        char* mName;
     };
 } // namespace pvz

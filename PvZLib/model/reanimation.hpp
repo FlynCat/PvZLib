@@ -13,9 +13,9 @@ namespace pvz {
         float mScaleY;
         float mFrame;
         float mAlpha;
-        Image *mImage;
-        Font *mFont;
-        char *mText;
+        Image* mImage;
+        Font* mFont;
+        char* mText;
     };
 
     struct ReanimAtlasImage {
@@ -23,26 +23,26 @@ namespace pvz {
         int32_t mY;
         int32_t mWidth;
         int32_t mHeight;
-        Image *mOriginalImage;
+        Image* mOriginalImage;
     };
 
     struct ReanimatorTrack {
-        char *mName;
-        ReanimatorTransform *mTransforms;
+        char* mName;
+        ReanimatorTransform* mTransforms;
         int32_t mTransformCount;
     };
 
     struct ReanimAtlas {
         ReanimAtlasImage mImageArray[64];
         int32_t mImageCount;
-        MemoryImage *mMemoryImage;
+        MemoryImage* mMemoryImage;
     };
 
     struct ReanimatorDefinition {
-        ReanimatorTrack *mTracks;
+        ReanimatorTrack* mTracks;
         int32_t mTrackCount;
         float mFPS;
-        ReanimAtlas *mReanimAtlas;
+        ReanimAtlas* mReanimAtlas;
     };
 
     struct ReanimatorTrackInstance {
@@ -53,7 +53,7 @@ namespace pvz {
         float mShakeX;
         float mShakeY;
         int32_t mAttachmentID;
-        Image *mImageOverride;
+        Image* mImageOverride;
         int32_t mRenderGroup;
         Color mTrackColor;
         bool mIgnoreClipRect;
@@ -66,7 +66,7 @@ namespace pvz {
         ReanimationType mReanimationType;
         float mAnimTime;
         float mAnimRate;
-        ReanimatorDefinition *mDefinition;
+        ReanimatorDefinition* mDefinition;
         ReanimLoopType mLoopType;
         bool mDead;
         int32_t mFrameStart;
@@ -74,9 +74,9 @@ namespace pvz {
         int32_t mFrameBasePose;
         SexyTransform2D mOverlayMatrix;
         Color mColorOverride;
-        ReanimatorTrackInstance *mTrackInstances;
+        ReanimatorTrackInstance* mTrackInstances;
         int32_t mLoopCount;
-        ReanimationHolder *mReanimationHolder;
+        ReanimationHolder* mReanimationHolder;
         bool mIsAttachment;
         int32_t mRenderOrder;
         Color mExtraAdditiveColor;
@@ -94,7 +94,7 @@ namespace pvz {
     struct ReanimCacheImageVariation {
         SeedType mSeedType;
         DrawVariation mDrawVariation;
-        MemoryImage *mImage;
+        MemoryImage* mImage;
     };
 
     struct ReanimatorCache {
@@ -102,6 +102,6 @@ namespace pvz {
         TodList<ReanimCacheImageVariation> mImageVariationList;
         unsigned char mLawnMowers[16];
         unsigned char mZombieImages[132];
-        LawnApp *mApp;
+        LawnApp* mApp;
     };
 } // namespace pvz

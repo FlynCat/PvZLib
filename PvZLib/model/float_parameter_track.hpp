@@ -10,7 +10,7 @@ namespace pvz {
     };
 
     struct FloatParameterTrack {
-        FloatParameterTrackNode *mNodes;
+        FloatParameterTrackNode* mNodes;
         int32_t mCountNodes;
     };
 } // namespace pvz

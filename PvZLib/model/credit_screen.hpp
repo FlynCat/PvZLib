@@ -7,16 +7,16 @@
 namespace pvz {
     struct CreditScreen {
         UNKNOWN_BYTES(140);
-        GameButton *mCloseButton;
-        LawnApp *mApp;
+        GameButton* mCloseButton;
+        LawnApp* mApp;
         CreditsPhase mCreditsPhase;
         int32_t mCreditsPhaseCounter;
         int32_t mCreditsReanimID;
         int32_t mFogParticleID;
         int32_t mBlinkCountdown;
-        LawnStoneButton *mMainMenuButton;
-        NewLawnButton *mReplayButton;
-        Widget *mOverlayWidget;
+        LawnStoneButton* mMainMenuButton;
+        NewLawnButton* mReplayButton;
+        Widget* mOverlayWidget;
         bool mDrawBrain;
         float mBrainPosX;
         float mBrainPosY;
