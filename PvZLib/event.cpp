@@ -26,7 +26,8 @@ namespace {
         EventHandler mPreEventHandler = nullptr;
         EventHandler mPostEventHandler = nullptr;
 
-        void Inject() {
+        vector<pair<uintptr_t, uint8_t*>> Inject() {
+            vector<pair<uintptr_t, uint8_t*>> OriginalBytes;
             vector<uint8_t> event_builder;
             for (size_t i = 0; i < mParamLocations.size(); i++) {
                 event_builder.push_back(0x8B); // mov eax, [esp + 0x20 + mParameterOffsets[i]];
@@ -40,24 +41,33 @@ namespace {
                 event_builder.push_back(((uint32_t)&mEvent->mParams[i] >> 24) & 0xFF);
             }
             auto& [entry_address, entry_num_bytes] = mEntryPoint;
-            Trampoline()
+            OriginalBytes.push_back({ entry_address,
+                Trampoline()
                 .Pushad()
                 .AddCustom(&event_builder[0], event_builder.size())
                 .Call(mPreEventHandler, mEvent)
                 .Popad()
                 .AddCustom((uint8_t*)entry_address, entry_num_bytes)
                 .Jump(entry_address + entry_num_bytes)
-                .Inject(entry_address);
+                .Inject(entry_address) }
+            );
 
             for (auto& [exit_address, exit_num_bytes] : mExitPoints) {
-                Trampoline()
+                OriginalBytes.push_back({ exit_address, Trampoline()
                     .Pushad()
                     .Call(mPostEventHandler, mEvent)
                     .Popad()
                     .AddCustom((uint8_t*)exit_address, exit_num_bytes)
-                    .Inject(exit_address);
+                    .Inject(exit_address) });
             }
+            return OriginalBytes;
         }
+        //void Eject() {
+        //    for (auto& [address, bytes] : mOriginalBytes) {
+        //        WriteProcessMemory(GetCurrentProcess(), (void*)address, bytes, 5, nullptr);
+        //        delete bytes;
+        //    }
+        //}
     };
 } // namespace
 
@@ -205,6 +215,17 @@ namespace pvz {
         default:
             break;
         }
-        injector.Inject();
+        eventMap.emplace(type, injector.Inject());
+    }
+    void Event::EjectEventHandler(EventType type) {
+        auto it = eventMap.find(type);
+        if (it != eventMap.end()) {
+            auto& data = eventMap.at(type);
+            for (auto [address, bytes] : data) {
+                WriteProcessMemory(GetCurrentProcess(), (void*)address, bytes, 5, nullptr);
+                delete bytes;
+            }
+            eventMap.erase(it);
+        }
     }
 } // namespace pvz

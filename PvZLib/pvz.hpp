@@ -4,7 +4,10 @@
 #include <Windows.h>
 
 #include <cstdint>
+#include <vector>
+#include <unordered_map>
 
+#include <iostream>
 #include "model/enum.hpp"
 #include "pvz_reference.hpp"
 

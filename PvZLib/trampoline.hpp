@@ -16,7 +16,7 @@ namespace pvz {
         Trampoline& Popad();
         Trampoline& AddCustom(uint8_t* instructions, uint32_t length);
         Trampoline& Jump(uintptr_t address);
-        void Inject(uintptr_t injection_address) const;
+        uint8_t* Inject(uintptr_t injection_address) const;
 
         template<typename T>
         Trampoline& Push(T t) {

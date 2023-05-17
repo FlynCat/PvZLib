@@ -1,6 +1,7 @@
 #include "pch.h"
 
 namespace pvz {
+    //TODO: VirtualFree
     Trampoline::Trampoline() { mCode = (uint8_t*)VirtualAlloc(nullptr, 128, MEM_COMMIT, PAGE_EXECUTE_READWRITE); }
 
     Trampoline& Trampoline::Pushad() {
@@ -28,10 +29,14 @@ namespace pvz {
         return *this;
     }
 
-    void Trampoline::Inject(uintptr_t injection_address) const {
+    uint8_t* Trampoline::Inject(uintptr_t injection_address) const {
         uint8_t patch[5];
+        uint8_t* orig = new uint8_t[5];
         patch[0] = 0xE9; // jmp trampoline;
         (uintptr_t&)patch[1] = (uintptr_t)mCode - (injection_address + 5);
+        patch[0] = 0xE9; // jmp trampoline;
+        ReadProcessMemory(GetCurrentProcess(), (void*)injection_address, orig, 5, nullptr);
         WriteProcessMemory(GetCurrentProcess(), (void*)injection_address, patch, sizeof(patch), nullptr);
+        return orig;
     }
 } // namespace pvz

@@ -10,8 +10,5 @@
 // add headers that you want to pre-compile here
 #include "framework.h"
 #include "pvz.hpp"
-#include <unordered_map>
-#include <iostream>
-#include <vector>
 
 #endif //PCH_H

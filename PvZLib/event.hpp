@@ -39,9 +39,11 @@ namespace pvz {
 
     struct Event {
         int32_t mParams[8];
-
+        //vector<pair<uintptr_t, uint8_t*>>
         static void InjectEventHandler(EventType type, EventHandler pre_event_handler, EventHandler post_event_handler);
 
         static void EjectEventHandler(EventType type);
+    private:
+        inline static std::unordered_map<EventType, std::vector<std::pair<uintptr_t, uint8_t*>>> eventMap; //FIXME: use set
     };
 } // namespace pvz
