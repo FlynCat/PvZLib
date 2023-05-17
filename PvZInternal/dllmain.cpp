@@ -17,7 +17,7 @@ int WINAPI mainThread(HMODULE hMod) {
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
     MessageBox(0, L"DLL Unloaded", L"PvZLib", MB_OK);
-    //TODO: EJECT event
+    pvz::Event::EjectEventHandler(pvz::EventType::kZombie_TakeDamage);
     FreeLibraryAndExitThread(hMod, 0);
     return 0;
 }
